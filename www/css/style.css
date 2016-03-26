@@ -1,1 +1,28 @@
 /* Empty. Add your own CSS if you like */
+body {
+    text-align: center;
+}
+
+.field {
+    
+    color: deeppink;
+    
+    font-size: 20px;
+    
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
+    padding: 10px;
+
+}
+
+#divXp {
+    
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+.hidden {
+    display: none;
+}

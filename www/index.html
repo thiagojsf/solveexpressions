@@ -25,9 +25,28 @@
 
     <ion-pane>
       <ion-header-bar class="bar-stable">
-        <h1 class="title">Ionic Blank Starter</h1>
+        <h1 class="title">Solve This Expression</h1>
       </ion-header-bar>
       <ion-content>
+          <div ng-controller="expression">
+             <div class="field">
+                {{ expression }}
+             </div>
+            <button class="button" ng-click="selectOption(0)">{{ options[0] }}</button>
+            <button class="button" ng-click="selectOption(1)">{{ options[1] }}</button>
+            <button class="button" ng-click="selectOption(2)">{{ options[2] }}</button>
+            <button class="button" ng-click="selectOption(3)">{{ options[3] }}</button>
+            <button class="button" ng-click="selectOption(4)">{{ options[4] }}</button>
+            <div id="divXp">
+                XP: {{ xp }}
+            </div>
+            <div>
+                <img id="imgRight" src="img/right.png" class="hidden" />
+                <img id="imgWrong" src="img/wrong.png" class="hidden"/>
+            </div>
+            <div id="divRightAnswer">{{ rightanswer }}.</div>
+            <div class="hidden>"{{ result }}</div>
+         </div>
       </ion-content>
     </ion-pane>
   </body>
